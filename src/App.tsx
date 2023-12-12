@@ -11,6 +11,7 @@ const App = () => {
 
   return (
     <>
+      {/* Event handling */}
       <SimpleInput />
       <SimpleButton />
 
@@ -30,6 +31,9 @@ const App = () => {
       <div>
         <EventPropagation />
       </div>
+
+
+      {/* React forms */}
     </>
   )
 }
