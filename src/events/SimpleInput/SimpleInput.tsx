@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./SimpleExample.module.css";
+import styles from "./SimpleInput.module.css";
 
-const SimpleExample = () => {
+const SimpleInput = () => {
   const [message, setMessage] = useState('');
 
   return (
@@ -12,4 +12,4 @@ const SimpleExample = () => {
   )
 };
 
-export default SimpleExample;
+export default SimpleInput;
