@@ -2,6 +2,8 @@ import EventPropagation from "./events/EventPropagation/EventPropagation";
 import PassingPropsToHandlers from "./events/PassingPropsToHandlers/PassingPropsToHandlers";
 import SimpleButton from "./events/SimpleButton/SimpleButton";
 import SimpleInput from "./events/SimpleInput/SimpleInput";
+import HTMLForm from "./forms/HTMLForm/HTMLForm";
+import ReactForm from "./forms/ReactForm/ReactForm";
 
 const App = () => {
 
@@ -12,6 +14,7 @@ const App = () => {
   return (
     <>
       {/* Event handling */}
+
       <SimpleInput />
       <SimpleButton />
 
@@ -32,8 +35,13 @@ const App = () => {
         <EventPropagation />
       </div>
 
-
       {/* React forms */}
+
+      <HTMLForm />
+
+      <hr />
+
+      <ReactForm />
     </>
   )
 }
