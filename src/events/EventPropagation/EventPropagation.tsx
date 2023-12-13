@@ -1,3 +1,5 @@
+import styles from './EventPropagation.module.css';
+
 const EventPropagation = () => {
 
   const handleContainerClick = () => {
@@ -11,7 +13,7 @@ const EventPropagation = () => {
   };
 
   return (
-    <div onClick={handleContainerClick}>
+    <div className={styles.container} onClick={handleContainerClick}>
       <button onClick={handleButtonClick} >child button</button>
     </div>
   );

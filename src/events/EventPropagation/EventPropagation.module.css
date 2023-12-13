@@ -1,0 +1,36 @@
+/* Style for the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd; /* subtle border */
+  background-color: #f9f9f9; /* light background */
+  border-radius: 10px;
+  cursor: pointer; /* Indicates the container is clickable */
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow effect on hover */
+}
+
+/* Style for the button */
+.button {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}

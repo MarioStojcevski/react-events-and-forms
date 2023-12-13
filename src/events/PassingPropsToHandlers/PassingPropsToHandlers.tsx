@@ -1,3 +1,5 @@
+import styles from './PassingPropsToHandler.module.css';
+
 type Props = {
   message: string;
   onFancyClick?: (message: string) => void;
@@ -10,7 +12,7 @@ const PassingPropsToHandlers = ({ message, onFancyClick, children }: Props) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <button onClick={() => {
         if (onFancyClick) {
           onFancyClick(message);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './ReactForm.module.css';
 
 const ReactForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -22,11 +23,12 @@ const ReactForm = () => {
   }
 
   return (
-    <div className="react-form">
+    <div>
       <form method="post" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="firstName">First name</label>
           <input
+            className={styles.input}
             id="firstName"
             name="firstName"
             type="text"

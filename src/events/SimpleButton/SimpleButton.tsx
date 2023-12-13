@@ -4,7 +4,7 @@ import styles from "./SimpleButton.module.css";
 const SimpleButton = () => {
   const CustomCompo = () => {
     return (
-      <div>
+      <div className={styles.customCompo}>
         <p>Hi there!</p>
       </div>
     );
@@ -25,19 +25,18 @@ const SimpleButton = () => {
   }
 
   return (
-    <>
+    <div>
       <button
         className={styles.button}
         onMouseEnter={handleButtonMouseEnter}
         onMouseLeave={handleButtonMouseLeave}
-        onCopy={() => alert('Copied!')}
         onClick={handleButtonClick}>
-
         Click me
       </button>
 
+      <p onCopy={() => alert('Copied!')}>Copy me</p>
       {isMouseEntered && <CustomCompo />}
-    </>
+    </div>
   )
 };
 

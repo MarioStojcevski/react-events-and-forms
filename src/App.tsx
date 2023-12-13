@@ -12,38 +12,42 @@ const App = () => {
   };
 
   return (
-    <>
+    <div style={{ width: '600px', marginLeft: '25%' }}>
       {/* Event handling */}
 
-      <SimpleInput />
-      <SimpleButton />
+      <h2>Events</h2>
+
+      {/* <SimpleInput /> */}
+      {/* <SimpleButton /> */}
 
       <div>
-        <PassingPropsToHandlers
+        {/* <PassingPropsToHandlers
           message="hello there"
-          onFancyClick={customClickHandler}>test</PassingPropsToHandlers>
-        <PassingPropsToHandlers
+          onFancyClick={customClickHandler}>test</PassingPropsToHandlers> */}
+        {/* <PassingPropsToHandlers
           message="what's up">
           <div>
             <p>These are React.Node children being passed to our custom component</p>
             <input placeholder="We can add whatever we like" />
           </div>
-        </PassingPropsToHandlers>
+        </PassingPropsToHandlers> */}
       </div>
 
-      <div>
+      {/* <div>
         <EventPropagation />
-      </div>
+      </div> */}
+
+      {/* <hr />
+      <h2>Forms</h2>
+      <hr /> */}
 
       {/* React forms */}
 
-      <HTMLForm />
+      {/* <HTMLForm /> */}
 
-      <hr />
-
-      <ReactForm />
-    </>
-  )
+      {/* <ReactForm /> */}
+    </div>
+  );
 }
 
 export default App;
